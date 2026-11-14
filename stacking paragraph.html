@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Stacking paragraphs</title>
+    <style>
+        p {
+            position: absolute;
+            width: 250px;
+            height: 60px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        #p1 { top: 20px; left: 20px; background: lightgreen; }
+        #p2 { top: 50px; left: 50px; background: lightblue; }
+        #p3 { top: 80px; left: 80px; background: pink; }
+        #p4 { top: 110px; left: 110px; background: yellow; }
+    </style>
+</head>
+<body>
+    <p id="p1" onmouseover="front(this)"> HTML is used to create web pages. </p>
+    <p id="p2" onmouseover="front(this)"> CSS is used to style web pages </p>
+    <p id="p3" onmouseover="front(this)"> JavaScript makes web pages Interactive. </p>
+    <p id="p4" onmouseover="front(this)"> Browser displays web pages. </p>
+
+    <script>
+        function front(p) {
+            document.querySelectorAll("p").forEach(
+                x => x.style.zIndex = 1
+            );
+            p.style.zIndex = 10;
+        }
+    </script>
+</body>
+</html>

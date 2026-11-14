@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Form Validation</title>
+<script>
+function validate() {
+    if (myform.Name.value == "") {
+        alert("Enter Name");
+        return false;
+    }
+    if (myform.Email.value == "") {
+        alert("Enter Email");
+        return false;
+    }
+    if (myform.zip.value == "" || isNaN(myform.zip.value) || myform.zip.value.length != 5) {
+        alert("Enter 5 digit Zip");
+        return false;
+    }
+    if (myform.Country.value == "-1") {
+        alert("Select Country");
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body>
+<form name="myform" onsubmit="return validate()">
+<table border="1">
+<tr><td>Name</td><td><input name="Name"></td></tr>

@@ -1,0 +1,12 @@
+
+function greet(name: string): string {
+    return "Hello from Regular function -" + name;
+}
+console.log(greet("anprisidi"));
+console.log("-------------------------");
+
+const greetArrow = (name: string): string => {
+    return "Hello from Arrow function -" + name;
+};
+
+console.log(greetArrow("anprisidi"));

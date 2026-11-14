@@ -1,0 +1,45 @@
+<html>
+<script src="reg.js"></script>
+<body bgcolor="pink">
+<center>
+<h1> Registration Form </h1>
+<hr color="red">
+<font color="blue" size="5">
+Use tab keys to move from one input field
+to the next.
+</font><br>
+<form name="registration" onsubmit="return formValidation()">
+User id:
+<input type="text" name="userid"><br>
+Password:
+<input type="password" name="passid"><br>
+Name:
+<input type="text" name="username"><br>
+Address:
+<input type="text" name="address"><br>
+Country:
+<select name="country">
+<option value="default"><Select a country></option>
+<option> Australia </option>
+<option>Canada </option>
+<option>India </option>
+<option>Russia </option>
+<option>USA </option>
+</select><br>
+ZIP Code :
+<input type="text" name="zip"><br>
+Email :
+<input type="text" name="email"><br>
+Sex :
+<input type="radio" name="sex"> Male
+<input type="radio" name="Sex"> Female <br>
+Language:
+<input type="checkbox"> English
+<input type="checkbox"> Non English <br>
+About :
+<textarea></textarea><br>
+<input type="submit" value="Submit">
+</form>
+</center>
+</body>
+</html>
