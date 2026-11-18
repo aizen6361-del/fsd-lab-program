@@ -1,9 +1,10 @@
+"use strict";
 // Write a TypeScript array element
 // for adding, deleting and sort
 // using tuple method
 // array_TupleExample.ts
-export // Tuple with numbers
- let myTuple = [30, 10, 50, 20];
+// Tuple with numbers
+let myTuple = [30, 10, 50, 20];
 console.log("Original Tuple:", myTuple);
 // Converting tuple to array for operations
 let arr = [...myTuple];
